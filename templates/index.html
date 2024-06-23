@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block title %}Yaswanth - Home{% endblock %}
+
+{% block content %}
+<section id="hero">
+    <h1>Yaswanth Reddy Duggasani</h1>
+    <p>Software Analyst | Data Enthusiast | Problem Solver</p>
+</section>
+
+<section id="summary">
+    <h2>Professional Summary</h2>
+    <p>As a software analyst and intern at Energytech Global, I have demonstrated my abilities in data sanitization, manual and unit testing. I am passionate about leveraging technology to solve complex problems and drive innovation.</p>
+</section>
+
+<section id="quick-links">
+    <h2>Quick Links</h2>
+    <ul>
+        <li><a href="{{ url_for('experience') }}">My Experience</a></li>
+        <li><a href="{{ url_for('education') }}">Education</a></li>
+        <li><a href="{{ url_for('skills') }}">Skills</a></li>
+        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+    </ul>
+</section>
+{% endblock %}

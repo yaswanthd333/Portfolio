@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero parallax-window" data-parallax="scroll" data-image-src="{{ url_for('static', filename='images/hero-bg.jpg') }}">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h1 class="display-4">Welcome to My Portfolio</h1>
+                <p class="lead">I'm Yaswanth Reddy Duggasani, a Full-stack Developer and Data Scientist passionate about creating innovative solutions.</p>
+                <a href="{{ url_for('projects') }}" class="btn btn-primary btn-lg me-3">View Projects</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">About Me</h5>
+                        <p class="card-text">Learn more about my background, experience, and passion for technology.</p>
+                        <a href="{{ url_for('about') }}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">My Skills</h5>
+                        <p class="card-text">Explore the technologies and tools I specialize in.</p>
+                        <a href="{{ url_for('skills') }}" class="btn btn-primary">View Skills</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Projects</h5>
+                        <p class="card-text">Check out some of my recent work and personal projects.</p>
+                        <a href="{{ url_for('projects') }}" class="btn btn-primary">See Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Testimonials</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Yaswanth is an exceptional developer. His attention to detail and problem-solving skills are unmatched."</p>
+                            <footer class="blockquote-footer">John Doe, <cite title="Source Title">Tech Lead at XYZ Company</cite></footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Working with Yaswanth was a pleasure. He delivers high-quality work on time and communicates effectively."</p>
+                            <footer class="blockquote-footer">Jane Smith, <cite title="Source Title">Project Manager at ABC Corp</cite></footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+{% endblock %}

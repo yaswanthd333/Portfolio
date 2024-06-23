@@ -1,0 +1,39 @@
+<!-- templates/contact.html -->
+{% extends "base.html" %}
+
+{% block title %}Yaswanth - Contact{% endblock %}
+
+{% block content %}
+<h1>Contact Me</h1>
+
+<section class="contact-info">
+    <h2>Get in Touch</h2>
+    <p>I'm always open to new opportunities and collaborations. Feel free to reach out to me using any of the following methods:</p>
+    
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:duggasaniyaswanth333@gmail.com">duggasaniyaswanth333@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+919347931519">+91 9347931519</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yaswanth-reddy-duggasani-1a4633198/" target="_blank" rel="noopener noreferrer">Yaswanth Reddy Duggasani</a></li>
+        <li><strong>Twitter:</strong> <a href="https://x.com/YaswanthD333" target="_blank" rel="noopener noreferrer">Yaswanth</a></li>
+    </ul>
+</section>
+
+<section class="contact-form">
+    <h2>Send Me a Message</h2>
+    <form action="#" method="POST" id="contact-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+{% endblock %}
