@@ -151,7 +151,7 @@ def main():
     
     if page == "Home":
         # Profile Image
-        st.image("/api/placeholder/200/200", width=200)
+        st.image("https://drive.google.com/file/d/1s1NA4jCNSQyfy4dXWlPzunvJpTKimEAD/view?usp=drivesdk", width=200)
         
         # Header Section
         st.markdown('<p class="title-text">Yaswanth Reddy Duggasani</p>', unsafe_allow_html=True)
